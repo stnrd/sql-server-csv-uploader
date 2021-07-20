@@ -1,0 +1,31 @@
+{
+    "ftp_host":"", 
+    "ftp_port":"22",
+    "ftp_user":"",
+    "ftp_pass":"",
+    "ftp_folder":"/test",
+    "localpath":"C:\\Users\\Sten Raadschelders\\go\\src\\github.com\\stenraad\\sql-server-csv-uploader",
+    "db_host":"",
+    "db_port":"",
+    "db_user":"",
+    "db_pass":"",
+    "db_name":"",
+    "db_timeout":"30",
+    "upload_files":true,
+    "delete_files": true, 
+    "zip_files": true, 
+    "files" : [
+        {
+            "filename":"Inventory",
+            "query":"select top 1000 * from dbo.inventory"
+        },
+        {
+            "filename":"Sales",
+            "query":"select top 1000 * from dbo.sales"
+        },
+        {
+            "filename":"StoredProcedure",
+            "query":"EXEC [Custom].[TEST_Data_Extraction] @OwnerID = 1"
+        }
+    ]
+}
