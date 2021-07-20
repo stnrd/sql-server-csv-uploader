@@ -47,7 +47,7 @@ type File struct {
 
 func main() {
 	// Get the program arguments
-	configJSON := flag.String("configjson", "./Config.json", "Point to the client tool JSON config client")
+	configJSON := flag.String("conf", "./Config.json", "Point to the client tool JSON config client")
 	flag.Parse()
 
 	// Dereference *pathValue
